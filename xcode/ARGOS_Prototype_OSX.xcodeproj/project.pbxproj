@@ -27,7 +27,6 @@
 		6A275BEC19058F2300C956F6 /* OscListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A275BDC19058F2300C956F6 /* OscListener.cpp */; };
 		6A275BED19058F2300C956F6 /* OscMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A275BDE19058F2300C956F6 /* OscMessage.cpp */; };
 		6A275BEE19058F2300C956F6 /* OscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A275BE019058F2300C956F6 /* OscSender.cpp */; };
-		6A275C2F1905B50C00C956F6 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A275C2E1905B50C00C956F6 /* libfmodex.dylib */; };
 		6A275F1D1905C23F00C956F6 /* AngleShaderImageView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A275DF31905C23E00C956F6 /* AngleShaderImageView.cpp */; };
 		6A275F1F1905C23F00C956F6 /* ARGOS_PrototypeApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A275DF61905C23E00C956F6 /* ARGOS_PrototypeApp.cpp */; };
 		6A275F201905C23F00C956F6 /* ARGOSButtonView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A275DF71905C23E00C956F6 /* ARGOSButtonView.cpp */; };
@@ -176,6 +175,7 @@
 		6A275FAF1905C23F00C956F6 /* VideoSnapshot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A275F161905C23F00C956F6 /* VideoSnapshot.cpp */; };
 		6A275FB01905C23F00C956F6 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A275F181905C23F00C956F6 /* View.cpp */; };
 		6A275FB11905C23F00C956F6 /* ViewController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A275F1A1905C23F00C956F6 /* ViewController.cpp */; };
+		6AFE8FEC1906FA15000879C1 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A275C2E1905B50C00C956F6 /* libfmodex.dylib */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -231,7 +231,7 @@
 		6A275BFD19059E1B00C956F6 /* fmod_memoryinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_memoryinfo.h; sourceTree = "<group>"; };
 		6A275BFE19059E1B00C956F6 /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
 		6A275BFF19059E1B00C956F6 /* fmodiphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmodiphone.h; sourceTree = "<group>"; };
-		6A275C2E1905B50C00C956F6 /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodex.dylib; path = ../../../../../_lib/cinder_0.8.5_mac/blocks/FMOD/lib/macosx/libfmodex.dylib; sourceTree = "<group>"; };
+		6A275C2E1905B50C00C956F6 /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodex.dylib; path = ../../../../../_lib/cinder_dev/blocks/FMOD/lib/macosx/libfmodex.dylib; sourceTree = "<group>"; };
 		6A275DF31905C23E00C956F6 /* AngleShaderImageView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; name = AngleShaderImageView.cpp; path = ../src/AngleShaderImageView.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		6A275DF41905C23E00C956F6 /* AngleShaderImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; name = AngleShaderImageView.h; path = ../src/AngleShaderImageView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6A275DF61905C23E00C956F6 /* ARGOS_PrototypeApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; name = ARGOS_PrototypeApp.cpp; path = ../src/ARGOS_PrototypeApp.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
@@ -582,7 +582,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A275C2F1905B50C00C956F6 /* libfmodex.dylib in Frameworks */,
+				6AFE8FEC1906FA15000879C1 /* libfmodex.dylib in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
 				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
@@ -700,6 +700,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A275C2E1905B50C00C956F6 /* libfmodex.dylib */,
 				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
 				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
 				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
@@ -764,7 +765,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6A275C2E1905B50C00C956F6 /* libfmodex.dylib */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 				5D0E72460D3F4349B67855DF /* QuickTime.framework */,
@@ -1425,6 +1425,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_LOCATION = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1437,11 +1438,18 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/anthony.tripaldi/Documents/Development/HALO_ARGOS_2700/trunk/dev/ARGOS_Prototype_OSX/xcode,
+					/Users/anthony.tripaldi/Documents/Development/_lib/cinder_dev/blocks/FMOD/lib/macosx,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
 				PRODUCT_NAME = ARGOS_Prototype_OSX;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
+				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = ./build;
 				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include $(CINDER_PATH)/blocks/OSC/src $(CINDER_PATH)/blocks/QuickTime/include";
 				VALID_ARCHS = i386;
@@ -1455,8 +1463,10 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CINDER_PATH = /Users/anthony.tripaldi/Documents/Development/_lib/cinder_dev;
 				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
 				GCC_FAST_MATH = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
@@ -1466,11 +1476,17 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/anthony.tripaldi/Documents/Development/HALO_ARGOS_2700/trunk/dev/ARGOS_Prototype_OSX/xcode,
+					/Users/anthony.tripaldi/Documents/Development/_lib/cinder_dev/blocks/FMOD/lib/macosx,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
 				PRODUCT_NAME = ARGOS_Prototype_OSX;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
 				STRIP_INSTALLED_PRODUCT = YES;
 				SYMROOT = ./build;
 				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include $(CINDER_PATH)/blocks/OSC/src $(CINDER_PATH)/blocks/QuickTime/include";
