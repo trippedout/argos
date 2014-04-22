@@ -19,3 +19,29 @@
 *.exe
 *.out
 *.app
+
+# Mac OS X cruft
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.user
+*.xcworkspace/
+xcuserdata/
+.DS_Store
+
+build/
+lib/libcinder*.a
+lib/cinder*.lib
+
+# Windows cruft
+*.suo
+*.ncb
+*.sdf
+*.opensdf
+Debug/
+Release/
+ipch/
+
+.svn
+*.svn
+
